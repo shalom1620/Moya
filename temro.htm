@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        /*-- 006D77 dark turquois
+83C5BE  light turquois
+EDF6F9  gray
+FFDDD2  light peach
+E29578   saturated peach--*/
+            body{
+                overflow-x: hidden;
+            }
+            @font-face {
+                font-family:'Ethiopic-hiwua';
+                src: url(hiwua.ttf);
+            }
+            header{
+                background-color:#EDF6F9 ;
+                display: flex;
+                gap:15%
+            }
+            .logo{
+                height: 50%;
+                width: 50%;
+            }
+        
+         
+            .search{
+                width: 180%;
+                height: 20%;
+                background-color: #EDF6F9;
+            }
+            .search::placeholder{
+                padding-left:7%;
+            }
+            
+            .searchicon{
+                width: 2.5%;
+                height: 2.5%;
+                position: absolute;
+                left:1.5%;
+               
+            }
+            .intro h1{
+                font-family: 'Ethiopic-hiwua',sans-serif;
+                font-size: 500%;
+            }
+            .intro{
+                background-image:url("bg.png");
+                width: 100vw;
+                height: 100vh;
+              
+            }
+            .intro h1,p{
+                color:#4C958E;
+            }
+            .button{
+                background-color:#E29578 ;
+                color:#EDF6F9;
+                border: none;
+                height:5%;
+                width:8%;
+                border-radius:15px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header class="lay">
+            <div>
+            <img class="logo" src="logo.png">
+            </div>
+            <div class="">
+            <input  class="search" type="text" placeholder="Search schools and tutors here.">
+            <img class="searchicon" src="search.svg"/>
+            </div>
+            <div class="">
+            <a href="about.htm">About</a>
+            <a href="signin.htm">Sign in</a>
+            <a href="signup.htm"><button class="button">Sign up</button></a>
+            </div>
+        </header>
+        <div class="intro">
+          
+            <h1>የእውቅት መረጃ በእጆ</h1>
+            <p>Looking to learn something new? We make it easy to find the best schools and tutors for your needs. Whether you're searching for academic support, skill-based learning, or professional development, our platform connects you with top-rated educators and institutions.</p>
+            <button class="button">Learn more</button>
+        </div>
+
+    </body>
+</html>
